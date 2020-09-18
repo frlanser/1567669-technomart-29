@@ -2,45 +2,45 @@
     font-family: PT Sans;
     font-style: normal;
     font-weight: normal;
-    src: local('PT Sans'), local('PTSans')
-    url('/fonts/ptsans.woff2') format('woff2')
-    url('/fonts/ptsans.woff') format('woff')
+    src: local('PT Sans'), local('PTSans'),
+    url('../fonts/ptsans.woff2') format('woff2'),
+    url('../fonts/ptsans.woff') format('woff');
 }
 
 @font-face {
     font-family: Cuprum;
     font-style: normal;
     font-weight: normal;
-    src: local('Cuprum')
-    url('/fonts/cuprum.woff2') format('woff2') 
-    url('/fonts/cuprum.woff') format('woff')
+    src: local('Cuprum'),
+        url('../fonts/cuprum.woff2') format('woff2'),
+        url('../fonts/cuprum.woff') format('woff');
 } 
 
 @font-face {
     font-family: PT Sans Bold;
     font-style: normal;
     font-weight: normal;
-    src: local('PT Sans Bold'), local('PTSansBold')
-    url('/fonts/ptsans.woff2') format('woff2')
-    url('/fonts/ptsans.woff') format('woff')
+    src: local('PT Sans Bold'), local('PTSansBold'),
+    url('../fonts/ptsans.woff2') format('woff2'),
+    url('../fonts/ptsans.woff') format('woff');
 }
 
 @font-face {
     font-family: Cuprum Bold;
     font-style: normal;
     font-weight: normal;
-    src: local('Cuprum Bold')
-    url('/fonts/cuprumbold.woff2') format('woff2') 
-    url('/fonts/cuprumbold.woff') format('woff')
+    src: local('Cuprum Bold'),
+    url('../fonts/cuprumbold.woff2') format('woff2'), 
+    url('../fonts/cuprumbold.woff') format('woff');
 }
 
 @font-face {
     font-family: Cuprum Italic;
     font-style: normal;
     font-weight: normal;
-    src: local('Cuprum Italic')
-    url('/fonts/cuprumitalic.woff2') format('woff2') 
-    url('/fonts/cuprumitalic.woff') format('woff')
+    src: local('Cuprum Italic'),
+    url('../fonts/cuprumitalic.woff2') format('woff2'), 
+    url('../fonts/cuprumitalic.woff') format('woff');
 }
 
 :root {
@@ -68,25 +68,14 @@
 }
 
 body {
-   min-width: 960px;
-   margin: 0;
-   padding: 0;
-   
+    font-family: Cuprum;
+    font-style: normal;
+    font-weight: normal;
+    min-width: 960px;
+    margin: 0;
+    padding: 0;  
 }
 
-.products-block h2,
-.contacts h2,
-.products h2,
-.details-list,
-.details h2,
-.manufactures-block h2,
-.service p,
-.service-slide h3,
-.service h2 {
-   font-family: Cuprum;
-   font-style: normal;
-   font-weight: normal;
-}
 
 a {
     text-decoration: none;
