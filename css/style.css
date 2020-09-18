@@ -1,0 +1,323 @@
+@font-face {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    src: local('PT Sans'), local('PTSans')
+    url('/fonts/ptsans.woff2') format('woff2')
+    url('/fonts/ptsans.woff') format('woff')
+}
+
+@font-face {
+    font-family: Cuprum;
+    font-style: normal;
+    font-weight: normal;
+    src: local('Cuprum')
+    url('/fonts/cuprum.woff2') format('woff2') 
+    url('/fonts/cuprum.woff') format('woff')
+} 
+
+@font-face {
+    font-family: PT Sans Bold;
+    font-style: normal;
+    font-weight: normal;
+    src: local('PT Sans Bold'), local('PTSansBold')
+    url('/fonts/ptsans.woff2') format('woff2')
+    url('/fonts/ptsans.woff') format('woff')
+}
+
+@font-face {
+    font-family: Cuprum Bold;
+    font-style: normal;
+    font-weight: normal;
+    src: local('Cuprum Bold')
+    url('/fonts/cuprumbold.woff2') format('woff2') 
+    url('/fonts/cuprumbold.woff') format('woff')
+}
+
+@font-face {
+    font-family: Cuprum Italic;
+    font-style: normal;
+    font-weight: normal;
+    src: local('Cuprum Italic')
+    url('/fonts/cuprumitalic.woff2') format('woff2') 
+    url('/fonts/cuprumitalic.woff') format('woff')
+}
+
+:root {
+   --basik-background: #f1f5f7;
+   --dark-blue: #293449;
+   --dark-blue-click: #161d29;
+   --basik-red: #ee3643;
+   --basik-red-click: #ba2732;
+   --basik-red-nav: #ca2c37;
+   --basik-green: #63a63e;
+   --basik-green-nav: #5fbb2d;
+   --basik-green-click: #518534;
+   --stuff-yellow: #ffbf47;
+   --stuff-blue: #3bbce3;
+   --stuff-violet: #dc91d8;
+   --stuff-green: #8ed78f;
+   --basik-white: #ffffff;
+   --basik-black: #000000; 
+   --basik-greylight: #c5c5c5;   
+   --basik-topbackground: rgba(0, 0, 0, 0.0001); 
+   --dark-grey: #32425c;
+   --background-products: #f9f5f0;
+   --basik-cen: #a9a9a9;
+   --low-white: #f3f7f9;
+}
+
+body {
+   min-width: 960px;
+   margin: 0;
+   padding: 0;
+   
+}
+
+.products-block h2,
+.contacts h2,
+.products h2,
+.details-list,
+.details h2,
+.manufactures-block h2,
+.service p,
+.service-slide h3,
+.service h2 {
+   font-family: Cuprum;
+   font-style: normal;
+   font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.no-indentation {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-weight: normal;
+}
+
+.no-bulites {
+    list-style-type: none;
+}
+
+.header-logo {
+    font-size: 24px;
+    background-color: var(--basik-red) ;
+}
+
+.main-order {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--basik-white);
+    background-color: var(--dark-blue);
+    list-style: none;
+}
+
+.main-description p {
+    font-family: Cuprum;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    color: var(--basik-red);
+}
+
+.main-description a {
+    font-family: Cuprum;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;
+    color: var(--basik-red);
+}
+
+.main-description address {
+    font-family: Cuprum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--dark-grey);
+}
+
+.site-navigation {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--basik-white);
+    background-color: var(--dark-blue);
+}
+
+.categories-item {
+    font-family: Cumprum;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30ph;
+    color: var(--basik-white);
+    width: 300px;
+    height: 123px;
+}
+
+.categories-list li:nth-child(1) {
+    background-color: var(--stuff-yellow);
+}
+
+.categories-list li:nth-child(2) {
+    background-color: var(--stuff-blue);
+}
+
+.categories-list li:nth-child(3) {
+    background-color: var(--stuff-violet);
+}
+
+.categories-list li:nth-child(4) {
+    background-color: var(--stuff-green);
+}
+
+.categories-list li:nth-child(5) {
+    background-color: var(--stuff-yellow);
+}
+
+.products-block {
+    background-color: var(--background-products);
+    width: 940px;
+    height: 89px;
+}
+
+.products-block h2 {
+    text-transform: uppercase;
+}
+
+
+.products h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+
+.products a {
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--basik-white);
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--basik-red);  
+}
+
+.products-item p {
+    font-family: Pt Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--basik-black)
+}
+
+.products-item del {
+    font-family: Pt Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--basik-cen);
+}
+
+.manufactures-block {
+    background-color: var(--background-products);
+    width: 940px;
+    height: 89px;
+}
+
+.manufactures-block h2 {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.manufactures a {
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--basik-white);
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--basik-red);
+}
+
+.service h2 {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basik-black);
+}
+
+.service-slide h3 {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basik-adr);
+}
+
+.service p {
+    font-size: 13px;
+    line-height: 24px;
+    color: var(--basik-black);
+}
+
+.details h2 {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basik-black);
+}
+
+.details p {
+    font-family: Pt Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.details-list {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--basik-black)
+}
+
+.contacts h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--basik-black)
+}
+
+.footer-navigation {
+    background-color: var(--dark-grey);
+}
+
+.footer-navigation h2 {
+    font-size: 24px;
+    background-color: var(--basik-red);
+    color: var(--basik-white);
+    list-style: none;
+}
+
+.footer-cat address {
+    color: var(--low-white);
+}
+
+.footer-contacts {
+    background-color: var(--dark-blue);
+    color: var(--basik-white);
+}
+
+
