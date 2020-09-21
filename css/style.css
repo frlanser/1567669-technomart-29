@@ -309,4 +309,51 @@ img {
     color: var(--basik-white);
 }
 
+/* Стили для католога */
 
+.catalog-navigation {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.catalog-navigation a {
+    color: var(--basik-black);
+}
+
+.page-maincatolog h1 {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.products-list-navigation {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.products-list-navigation a {
+    color: var(--basik-black);
+}
+
+.perforators h2 {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.perforators p {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+    color: var(--basik-black)
+}
