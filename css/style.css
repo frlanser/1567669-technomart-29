@@ -76,7 +76,6 @@ body {
     padding: 0;  
 }
 
-
 a {
     text-decoration: none;
     color: white;
@@ -98,9 +97,12 @@ img {
     list-style-type: none;
 }
 
-.header-logo {
-    font-size: 24px;
-    background-color: var(--basik-red) ;
+.logo-text {
+    position: absolute;
+    left: 3%;
+    right: 75.58%;
+    top: 1.75%;
+    bottom: 90.62%;
 }
 
 .main-order {
@@ -186,7 +188,6 @@ img {
     text-transform: uppercase;
 }
 
-
 .products h2 {
     font-size: 30px;
     text-transform: uppercase;
@@ -239,6 +240,7 @@ img {
     text-align: center;
     text-transform: uppercase;
     background-color: var(--basik-red);
+    text-align: center;
 }
 
 .service h2 {
@@ -294,10 +296,7 @@ img {
 }
 
 .footer-navigation h2 {
-    font-size: 24px;
-    background-color: var(--basik-red);
-    color: var(--basik-white);
-    list-style: none;
+    visibility: hidden;
 }
 
 .footer-cat address {
@@ -356,4 +355,15 @@ img {
     font-size: 13px;
     line-height: 24px;
     color: var(--basik-black)
+}
+
+.social {
+    background: linear-gradient(0deg, #212A3A, #212A3A);
+    border-radius: 50%;
+    Width: 44px;
+    Height: 44px;   
+}
+
+.social-hidden {
+    opacity: 0;  
 }
