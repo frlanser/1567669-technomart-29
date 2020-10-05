@@ -65,6 +65,7 @@
    --background-products: #f9f5f0;
    --basik-cen: #a9a9a9;
    --low-white: #f3f7f9;
+   --bacground-heading: #f2f6f8;
 }
 
 body {
@@ -531,6 +532,9 @@ img {
 /* Стили для католога */
 
 .catalog-navigation {
+    display: grid;
+    grid-template-columns: 52px 80px 88px;
+    gap: 20px;
     font-family: PT Sans;
     font-style: normal;
     font-weight: normal;
@@ -538,19 +542,49 @@ img {
     line-height: 18px;
     align-items: center;
     text-transform: uppercase;
+    width: 940px;
+    margin: 0 auto;
 }
 
 .catalog-navigation a {
     color: var(--basik-black);
 }
 
-.page-maincatolog h1 {
+.catalog-heading {
+    background-color: var(--bacground-heading);
+    width: 940px;
+    margin: 0 auto;
+}
+
+.catalog-heading h2 {
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
+    color: var(--dark-grey);
+    height: 89px;
+    padding: 29px 739px 30px 29px;
+ }
+
+.product-block {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.products-list-catalog {
+    display: grid;
+    grid-template-columns: 220px 220px 220px;
+    gap: 20px;
+}
+
+.product-block-nav {
+    grid-column: 2/2;
 }
 
 .products-list-navigation {
+    display: grid;
+    grid-template-columns: 38px 38px 38px 140px;
     font-family: PT Sans;
     font-style: normal;
     font-weight: normal;
@@ -560,12 +594,23 @@ img {
 
 .products-list-navigation a {
     color: var(--basik-black);
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 2px;
+    
+}
+
+.perforators {
+    background-color: var(--basik-background);
+    height: 261px;
 }
 
 .perforators h2 {
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
+    width: 940px;
+    margin: 0 auto;
 }
 
 .perforators p {
@@ -574,6 +619,8 @@ img {
     font-weight: normal;
     font-size: 13px;
     line-height: 24px;
-    color: var(--basik-black)
+    color: var(--basik-black);
+    width: 940px;
+    margin: 0 auto;
 }
 
