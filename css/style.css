@@ -1507,7 +1507,6 @@ input[type="search"] {
     width: 940px;
     margin: 0 auto;
     justify-content: space-between;
-    align-items: flex-end;
 }
 
 .footer-contacts h2 {
