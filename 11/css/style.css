@@ -191,7 +191,7 @@ input[type="search"] {
     top: 15px;
     width: 14px;
     height: 15px;
-    background-image: url("/img/icon-bookmark.svg");
+    background-image: url('../img/icon-bookmark.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 0.3;
@@ -219,7 +219,7 @@ input[type="search"] {
     top: 17px;
     width: 15px;
     height: 15px;
-    background-image: url("/img/icon-cart.svg");
+    background-image: url('../img/icon-cart.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 0.3;
@@ -269,13 +269,13 @@ input[type="search"] {
     top: 13px;
     width: 20px;
     height: 17px;
-    background-image: url("/img/icon-login.svg");
+    background-image: url('../img/icon-login.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
 }
 
 .button-sign:hover::before {
-    background-image: url("/img/icon-loginhov.png");
+    background-image: url('../img/icon-loginhov.png');
 }
 
 .button-reg:hover,
@@ -325,7 +325,7 @@ input[type="search"] {
     top: 14px;
     width: 18px;
     height: 19px;
-    background-image: url("/img/Tell.svg");
+    background-image: url('../img/Tell.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -509,7 +509,7 @@ input[type="search"] {
     top: 31px;
     width: 44px;
     height: 65px;
-    background-image: url("/img/Object-mat.svg");
+    background-image: url('../img/Object-mat.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -521,7 +521,7 @@ input[type="search"] {
     top: 34px;
     width: 75px;
     height: 61px;
-    background-image: url("/img/Shape.svg");
+    background-image: url('../img/Shape.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -533,7 +533,7 @@ input[type="search"] {
     top: 30px;
     width: 78px;
     height: 62px;
-    background-image: url("/img/icon-3.svg");
+    background-image: url('../img/icon-3.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -545,7 +545,7 @@ input[type="search"] {
     top: 26px;
     width: 78px;
     height: 75px;
-    background-image: url("/img/icon-4.svg");
+    background-image: url('../img/icon-4.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -557,7 +557,7 @@ input[type="search"] {
     top: 32px;
     width: 78px;
     height: 62px;
-    background-image: url("/img/icon-5.svg");
+    background-image: url('../img/icon-5.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -593,7 +593,7 @@ input[type="search"] {
     left: 24px;
     width: 21px;
     height: 39px;
-    background-image: url(../img/slideleft.svg);
+    background-image: url('../img/slideleft.svg');
     background-repeat: no-repeat;
     position: 0 0;
 }
@@ -605,7 +605,7 @@ input[type="search"] {
     left: 578px;
     width: 21px;
     height: 39px;
-    background-image: url(../img/slideright.svg);
+    background-image: url('../img/slideright.svg');
     background-repeat: no-repeat;
     position: 0 0;
 }
@@ -667,7 +667,7 @@ input[type="search"] {
     left: 24px;
     width: 21px;
     height: 39px;
-    background-image: url(../img/slideleft.svg);
+    background-image: url('../img/slideleft.svg');
     background-repeat: no-repeat;
     position: 0 0;
 }
@@ -679,7 +679,7 @@ input[type="search"] {
     left: 580px;
     width: 21px;
     height: 39px;
-    background-image: url(../img/slideright.svg);
+    background-image: url('../img/slideright.svg');
     background-repeat: no-repeat;
     position: 0 0;
 }
@@ -805,7 +805,7 @@ input[type="search"] {
     top: 10px;
     width: 15px;
     height: 15px;
-    background-image: url("/img/icon-cart.svg");
+    background-image: url('../img/icon-cart.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 0.3;
@@ -936,7 +936,7 @@ input[type="search"] {
     letter-spacing: 0.4px;
     text-align: center;
     text-transform: uppercase;
-    background-image: url("../img/Shape.png");
+    background-image: url('../img/Shape.png');
     width: 141px;
     height: 38px;
     border: 0;
@@ -1243,6 +1243,7 @@ input[type="search"] {
 
 .details-contact img {
     margin-top: 6px;
+    margin-bottom: 2px;
 }
 
 .details-list-lost {
@@ -1256,7 +1257,38 @@ input[type="search"] {
     padding: 13px 61px 9px 62px;
     outline: none;
     border: none;
-    margin-top: -10px;
+}
+
+.modalMap {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    pointer-events: none;
+    top: 2375px;
+    right: 0;
+    bottom: 0;
+    left: 370px;
+    border-top: 7px solid var(--basik-red);
+    width: 620px;
+    height: 430px;
+    background-image: url('../img/MapModal.png');
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modalMap:target {
+    display: block;
+    pointer-events: auto;
+}
+
+.modalMap-close {
+    position: absolute;
+    top: 12px;
+    left: 585px;
+    background-image: url('../img/closem.svg');
+    width: 30px;
+    height: 30px;
+    z-index: 2;
+    background-repeat: no-repeat;
 }
 
 .modalLost {
@@ -1284,10 +1316,11 @@ input[type="search"] {
     position: absolute;
     top: 12px;
     left: 585px;
-    background-image: url(../img/CloseModal.svg);
+    background-image: url('../img/closem.svg');
     width: 30px;
     height: 30px;
     z-index: 2;
+    background-repeat: no-repeat;
 }
 
 .name-form {
@@ -1396,7 +1429,7 @@ input[type="search"] {
 }
 
 .page-footer {
-    margin-top: 78px;
+    margin-top: 80px;
 }
 
 .footer-navigation-bar {
@@ -1497,7 +1530,7 @@ input[type="search"] {
 
 .footer-contacts-bar {
     background-color: var(--dark-blue);
-    height: 107px;
+    height: 197px;
 }
 
 .footer-contacts {
@@ -1507,6 +1540,7 @@ input[type="search"] {
     width: 940px;
     margin: 0 auto;
     justify-content: space-between;
+    padding-top: 20px;
 }
 
 .footer-contacts h2 {
@@ -1516,13 +1550,15 @@ input[type="search"] {
 .footer-social {
     display: grid;
     grid-template-columns: 44px 44px 44px;
-    gap: 10px;
+    gap: 1px;
+    margin-left: 36px;
 }
 
 .footer-copyright {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 54px;
+    gap: 52px;
+    padding-right: 13px;
 }
 
 .footer-copyright li a {
@@ -1540,8 +1576,8 @@ input[type="search"] {
 .social {
     background: linear-gradient(0deg, #212A3A, #212A3A);
     border-radius: 50%;
-    Width: 44px;
-    Height: 44px;   
+    Width: 42px;
+    Height: 42px;   
 }
 
 .social a {
