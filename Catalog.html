@@ -9,14 +9,18 @@
     <body class="page-body">
       <header class="page-header">
         <div class="main-order-bar">
-          <nav class="main-order-catalog">
+          <nav class="main-order">
             <a class="header-logo" href="index.html">
               <img src="img/Logo-teh.svg" alt="Логотип компании «Техномарт»">
             </a>
-            <ul class="order-navigation-catalog no-indentation">
-              <li><a href="" class="order-navigation-bookmarks">Закладки: 0</a></li>
-              <li><a href="" class="order-navigation-basket">Корзина: 10</a></li>
-              <li><a href="" class="order-navigation-arrange">Оформить заказ</a></li>
+            <form class="main-order-search" action="https://echo.htmlacademy.ru" method="post">
+              <input id="search-field" type="search" name="search" placeholder="Поиск:">
+              <label for="search-field"></label>
+            </form>
+            <ul class="order-navigation no-indentation">
+              <li><a class="order-navigation-inbookmarks" href="">Закладки: 0</a></li>
+              <li><a class="order-inbasket" href="">Корзина:0</a></li>
+              <li><a class="order-navigation-arrange" href="">Оформить заказ</a></li>
             </ul>
           </nav>
         </div>
