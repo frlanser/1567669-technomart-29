@@ -9,14 +9,18 @@
     <body class="page-body">
       <header class="page-header">
         <div class="main-order-bar">
-          <nav class="main-order-catalog">
+          <nav class="main-order">
             <a class="header-logo" href="index.html">
               <img src="img/Logo-teh.svg" alt="Логотип компании «Техномарт»">
             </a>
-            <ul class="order-navigation-catalog no-indentation">
-              <li><a href="" class="order-navigation-bookmarks">Закладки: 0</a></li>
-              <li><a href="" class="order-navigation-basket">Корзина: 10</a></li>
-              <li><a href="" class="order-navigation-arrange">Оформить заказ</a></li>
+            <form class="main-order-search" action="https://echo.htmlacademy.ru" method="post">
+              <input id="search-field" type="search" name="search" placeholder="Поиск:">
+              <label for="search-field"></label>
+            </form>
+            <ul class="order-navigation no-indentation">
+              <li><a class="order-navigation-inbookmarks" href="">Закладки: 0</a></li>
+              <li><a class="order-inbasket activebacground" href="">Корзина:10</a></li>
+              <li><a class="order-navigation-arrange" href="">Оформить заказ</a></li>
             </ul>
           </nav>
         </div>
@@ -65,7 +69,7 @@
           </div>
         </div>
         <section class="catalog-block">
-          <h2></h2>
+          <h2>Выбор инструмента</h2>
           <div class="catalog-block-product">
             <div class="catalog-filter">
               <div class="catalog-filter-form">
@@ -85,7 +89,7 @@
               </div>
             </div>
             <div class="catalog-block-filter">         
-              <form action="https//echo.htmlacademy.ru" method="post">
+              <form action="https://echo.htmlacademy.ru" method="post">
                 <fieldset class="filter-priсe">
                   <legend>Цена:</legend>
                   <div class="range-price">
@@ -135,20 +139,20 @@
                   <legend>Питание:</legend>
                   <ul class="radio-feed no-bulites">
                     <li>
-                      <input type="radio" name="radio-battery" id="radio-battery">
+                      <input type="radio" name="power" id="radio-battery" value="radio-battery">
                       <label for="radio-battery">Аккумуляторные</label>
                     </li>
                     <li>
-                      <input type="radio" name="radio-network" id="radio-network">
+                      <input type="radio" name="power" id="radio-network" value="radio-network">
                       <label for="radio-network">Сетевые</label>
                     </li>
                   </ul>
                 </fieldest>
-              </form>
-              <div class="filtr-button-show">
-                <button type="button" class="filtr-button">Показать</button>
+                <div class="filtr-button-show">
+                  <button type="submit" class="filtr-button">Показать</button>
+                </div>
               </div>
-            </div>
+              </form>
             <ul class="products-list-catalog no-bulites">
               <li class="products-item">
                 <div class="products-item-bay">
@@ -213,7 +217,7 @@
                 <figure class="products-item-image">
                   <img src="img/bfg-3000.jpg" alt="Перфоратор BOSCH BFG 2000">
                 </figure>
-                <span>Перфоратор BOSCH <br>BFG 2000<br></span>
+                <span>Перфоратор BOSCH <br>BFG 2000<br><del></del></span>
                 <a class="button-products" href="">12&nbsp;500&nbsp;р.</a>
               </li>
               <li class="products-item">
@@ -246,7 +250,7 @@
                 <figure class="products-item-image">
                   <img src="img/bfg-3000.jpg" alt="Перфоратор BOSCH BFG 2000">
                 </figure>
-                <span>Перфоратор BOSCH <br>BFG 2000<br></span>
+                <span>Перфоратор BOSCH <br>BFG 2000<br><del></del></span>
                 <a class="button-products" href="">12&nbsp;500&nbsp;р.</a>
               </li>
               <div id="openModalBay" class="modalBay">
