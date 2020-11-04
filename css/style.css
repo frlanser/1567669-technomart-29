@@ -1742,8 +1742,11 @@ input[type="search"] {
     outline: none; 
 }
 
-.social-hidden {
-    opacity: 0;  
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
 }
 
 /* Стили для католога */
@@ -2143,35 +2146,44 @@ input[type="search"] {
     color: var(--basik-red)
 }
 
-.catalog-sorting-up {
-    position: absolute;
-    top: -11px;
-    left: 641px;
+.catolog-sorting-button {
     display: inline-block;
     vertical-align: baseline;
+    color: var(--basik-greylight);
+    border: 5.5px solid transparent;
+}
+
+.catalog-sorting-up {
+    position: absolute;
+    top: 15px;
+    left: 641px;
 	border: 10px solid;
 	border-right-width: 5.5px;
 	border-left-width: 5.5px;
 	border-right-color: transparent;
-    border-left-color: transparent;
-    background-repeat: no-repeat;
-    height: 15px;
+    border-left-color: transparent;   
+}
+
+.catalog-sorting-up {
+    border-top-width: 0;
+    border-bottom: 10px solid currentColor;
 }
 
 .catalog-sorting-down {
     position: absolute;
     top: 14px;
     left: 673px;
-    display: inline-block;
-    vertical-align: baseline;
+    border: 10px solid;
     color: var(--basik-greylight);
-	border: 10px solid;
 	border-right-width: 5.5px;
 	border-left-width: 5.5px;
 	border-right-color: transparent;
     border-left-color: transparent;
-    background-repeat: no-repeat;
-    height: 15px;
+}
+
+.catalog-sorting-down {
+    border-bottom-width: 0;
+    border-top: 10px solid currentColor;
 }
 
 .catalog-sorting-down:hover,
