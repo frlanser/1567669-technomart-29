@@ -135,15 +135,13 @@ img {
 
 .main-order {
     display: flex;
-    justify-content: space-between;  
     font-size: 18px;
     line-height: 20px;
     color: var(--basik-white);
     list-style: none;
     width: 940px;
     margin: 0 auto;
-    min-height: 42px;  
-    flex-basis: 0 0auto;  
+    min-height: 42px;   
 }
 
 .header-logo {
@@ -166,8 +164,9 @@ img {
 
 .main-order-search {
     position: relative;
-    flex-basis: 0 0 auto;
+    flex-basis: auto;
     flex-shrink: 1;
+    flex-grow: 1;
 }
 
 .main-order-search input::placeholder {
@@ -1742,8 +1741,15 @@ input[type="search"] {
     outline: none; 
 }
 
-.social-hidden {
-    opacity: 0;  
+.visually-hidden {
+  position: absolute;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0;
+	border: 0;
+	height: 1px; 
+	width: 1px; 
+	overflow: hidden;
 }
 
 /* Стили для католога */
@@ -2102,7 +2108,6 @@ input[type="search"] {
 .catalog-filter-sorting {
     position: relative;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     background-color: var(--basik-filter);
     overflow: hidden;
@@ -2110,14 +2115,13 @@ input[type="search"] {
 
 .catalog-sorting {
     display: flex;
-    flex-basis: 418px;
+    flex-basis: 400px;
     justify-content: space-between;
 }
 
 .catalog-sorting li {
-    padding-left: 50px;
+  padding-left: 50px;
 }
-
 
 .catalog-sorting li {
     font-family: PT sans;
@@ -2143,35 +2147,27 @@ input[type="search"] {
     color: var(--basik-red)
 }
 
-.catalog-sorting-up {
-    position: absolute;
-    top: -11px;
-    left: 641px;
-    display: inline-block;
-    vertical-align: baseline;
-	border: 10px solid;
-	border-right-width: 5.5px;
-	border-left-width: 5.5px;
-	border-right-color: transparent;
-    border-left-color: transparent;
-    background-repeat: no-repeat;
-    height: 15px;
+.catalog-corting-nav li{
+    padding-left: 10px;
+    padding-right: 14px;
+    margin-top: -5px;
 }
 
-.catalog-sorting-down {
-    position: absolute;
-    top: 14px;
-    left: 673px;
+.catolog-sorting-button {
     display: inline-block;
     vertical-align: baseline;
     color: var(--basik-greylight);
-	border: 10px solid;
-	border-right-width: 5.5px;
-	border-left-width: 5.5px;
-	border-right-color: transparent;
-    border-left-color: transparent;
-    background-repeat: no-repeat;
-    height: 15px;
+    border: 5.5px solid transparent;
+}
+
+.catalog-sorting-up {
+    border-top-width: 0;
+    border-bottom: 10px solid currentColor; 
+}
+
+.catalog-sorting-down {
+    border-bottom-width: 0;
+    border-top: 10px solid currentColor;
 }
 
 .catalog-sorting-down:hover,
@@ -2189,7 +2185,6 @@ input[type="search"] {
 
 .active {
     color: var(--basik-red);
-
 }
 
 .catalog-filter-sorting span {
@@ -2206,7 +2201,6 @@ input[type="search"] {
 
 .catalog-filter-sorting ul {
     display: flex;
-    flex-direction: row;
 }
 
 .products-list-catalog {
