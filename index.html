@@ -15,7 +15,7 @@
           </a>
           <form class="main-order-search" action="https://echo.htmlacademy.ru" method="post">
             <input id="search-field" type="search" name="search" placeholder="Поиск:">
-            <label for="search-field"></label>
+            <label aria-label="search" for="search-field"></label>
           </form>
           <ul class="order-navigation no-indentation">
             <li><a class="order-navigation-inbookmarks" href="">Закладки: 0</a></li>
@@ -167,7 +167,7 @@
         <ul class="manufactures-list no-bulites">
           <li>
             <a href="">
-              <img class="manufactures-list-logo" src="img/logo-bosch.jpg" width="123" height="40" alt="Логотип партнера Bosch">
+              <img class="manufactures-list-logo" src="img/logo-bosch.jpg"   alt="Логотип партнера Bosch">
             </a>
           </li>
           <li>
@@ -270,10 +270,10 @@
               <a class="modalMap-close" href=""></a>
             </div> 
           </div>
-          <a class="details-list-lost" href="#openModalLost">Заблудились? Напишите нам!</a>
+          <a class="details-list-lost" href="">Заблудились? Напишите нам!</a>
           <div id="openModalLost" class="modalLost" >
             <a class="modalLost-close" href=""></a>
-            <form action="https//echo.htmlacademy.ru" method="post">
+            <form class="form-action" action="https://echo.htmlacademy.ru" method="post">
               <label class="signature-form" for=your-name>Ваше имя:</label>
               <input class="name-form" type="text" id="your-name" name="your-name" placeholder="Имя Фамилия">
               <label class="youremail-form" for=your-email>Ваш e-mail:</label>
@@ -283,6 +283,7 @@
               <button class="modalLost-send" type="submit">Отправить</button>
             </form>
           </div>
+          <script src="js/script.js"></script>
         </div>
       </section>
     </main>
@@ -327,17 +328,17 @@
             <ul class="footer-social no-bulites">
               <li class="social-vk social">
                 <a href="">
-                  <span class="social-hidden">Вконтакте</span> 
+                  <span class="visually-hidden">Вконтакте</span>  
                 </a> 
               </li>
               <li class="social-face social">
                 <a href="">
-                  <span class="social-hidden">Фейсбук</span>
+                  <span class="visually-hidden">Фейсбук</span>
                 </a>
               </li>
               <li class="social-inst social">
                 <a href="">
-                  <span class="social-hidden">Инстаграмм</span>
+                  <span class="visually-hidden">Инстаграмм</span>
                 </a>
               </li>
             </ul>

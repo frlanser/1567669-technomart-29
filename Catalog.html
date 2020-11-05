@@ -15,11 +15,11 @@
             </a>
             <form class="main-order-search" action="https://echo.htmlacademy.ru" method="post">
               <input id="search-field" type="search" name="search" placeholder="Поиск:">
-              <label for="search-field"></label>
+              <label aria-label="search" for="search-field"></label>
             </form>
             <ul class="order-navigation no-indentation">
               <li><a class="order-navigation-inbookmarks" href="">Закладки: 0</a></li>
-              <li><a class="order-inbasket" href="">Корзина:0</a></li>
+              <li><a class="order-inbasket activebacground" href="">Корзина:10</a></li>
               <li><a class="order-navigation-arrange" href="">Оформить заказ</a></li>
             </ul>
           </nav>
@@ -45,7 +45,7 @@
         </div>   
         <nav class="main-navigation">
           <ul class="site-navigation no-bulites">
-            <li><a href="">Главная</a></li>
+            <li><a href="index.html">Главная</a></li>
             <li><a href="">Компания</a></li>
             <li><a href="Catalog.html">Каталог</a></li>
             <li><a href="">Новости</a></li>
@@ -69,7 +69,7 @@
           </div>
         </div>
         <section class="catalog-block">
-          <h2></h2>
+          <h2>Выбор инструмента</h2>
           <div class="catalog-block-product">
             <div class="catalog-filter">
               <div class="catalog-filter-form">
@@ -82,14 +82,14 @@
                   <li><a href="">По типу</a></li>
                   <li><a href="">По функционалу</a></li>
                 </ul>
-                <ul class="no-bulites">
-                  <li><a href="" class="catalog-sorting-up active"></a></li>
-                  <li><a href="" class="catalog-sorting-down"></a></li>
+                <ul class="catalog-corting-nav no-bulites">
+                  <li><a href="" class="catolog-sorting-button catalog-sorting-up active"></a></li>
+                  <li><a href="" class="catolog-sorting-button catalog-sorting-down"></a></li>
                 </ul>
               </div>
             </div>
             <div class="catalog-block-filter">         
-              <form action="https//echo.htmlacademy.ru" method="post">
+              <form action="https://echo.htmlacademy.ru" method="post">
                 <fieldset class="filter-priсe">
                   <legend>Цена:</legend>
                   <div class="range-price">
@@ -139,20 +139,20 @@
                   <legend>Питание:</legend>
                   <ul class="radio-feed no-bulites">
                     <li>
-                      <input type="radio" name="radio-battery" id="radio-battery">
+                      <input type="radio" name="power" id="radio-battery" value="radio-battery">
                       <label for="radio-battery">Аккумуляторные</label>
                     </li>
                     <li>
-                      <input type="radio" name="radio-network" id="radio-network">
+                      <input type="radio" name="power" id="radio-network" value="radio-network">
                       <label for="radio-network">Сетевые</label>
                     </li>
                   </ul>
                 </fieldest>
-              </form>
-              <div class="filtr-button-show">
-                <button type="button" class="filtr-button">Показать</button>
+                <div class="filtr-button-show">
+                  <button type="submit" class="filtr-button">Показать</button>
+                </div>
               </div>
-            </div>
+              </form>
             <ul class="products-list-catalog no-bulites">
               <li class="products-item">
                 <div class="products-item-bay">
@@ -217,7 +217,7 @@
                 <figure class="products-item-image">
                   <img src="img/bfg-3000.jpg" alt="Перфоратор BOSCH BFG 2000">
                 </figure>
-                <span>Перфоратор BOSCH <br>BFG 2000<br></span>
+                <span>Перфоратор BOSCH <br>BFG 2000<br><del></del></span>
                 <a class="button-products" href="">12&nbsp;500&nbsp;р.</a>
               </li>
               <li class="products-item">
@@ -250,7 +250,7 @@
                 <figure class="products-item-image">
                   <img src="img/bfg-3000.jpg" alt="Перфоратор BOSCH BFG 2000">
                 </figure>
-                <span>Перфоратор BOSCH <br>BFG 2000<br></span>
+                <span>Перфоратор BOSCH <br>BFG 2000<br><del></del></span>
                 <a class="button-products" href="">12&nbsp;500&nbsp;р.</a>
               </li>
               <div id="openModalBay" class="modalBay">
@@ -318,17 +318,17 @@
               <ul class="footer-social no-bulites">
                 <li class="social-vk social">
                   <a href="">
-                    <span class="social-hidden">Вконтакте</span> 
+                    <span class="visually-hidden">Вконтакте</span> 
                   </a> 
                 </li>
                 <li class="social-face social">
                   <a href="">
-                    <span class="social-hidden">Фейсбук</span>
+                    <span class="visually-hidden">Фейсбук</span>
                   </a>
                 </li>
                 <li class="social-inst social">
                   <a href="">
-                    <span class="social-hidden">Инстаграмм</span>
+                    <span class="visually-hidden">Инстаграмм</span>
                   </a>
                 </li>
               </ul>
