@@ -1421,6 +1421,8 @@ input[type="search"] {
     border: none;
 }
 
+.details-list-lost:not()
+
 .name-form {
     position: absolute;
     border: 2px solid var(--basik-greylight);
