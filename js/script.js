@@ -1,34 +1,32 @@
 const lostLink = document.querySelector(".details-list-lost");
-const lostPopup = document.querySelector(".modalLost");
-const lostClose = document.querySelector(".modalLost-close");
+const lostPopup = document.querySelector(".modallost");
+const lostClose = document.querySelector(".modallost-close");
 const lostAction = document.querySelector(".form-action")
 const lostForm = document.querySelector(".name-form");
 const lostEmail = document.querySelector(".email-form");
-const mapOpen = document.querySelector(".modalMapOpen");
-const mapModal = document.querySelector(".modalMap");
-const mapClose = document.querySelector(".modalMap-close");
-const bayOpen = document.querySelector(".buuton-bay");
-const bayModal = document.querySelector(".modalBay");
-const bayClose = document.querySelector(".modalBay-close");
+const mapOpen = document.querySelector(".modalmapopen");
+const mapModal = document.querySelector(".modalmap");
+const mapClose = document.querySelector(".modalmap-close");
+
 
 lostLink.addEventListener("click", function (evt) { 
   evt.preventDefault();
-  lostPopup.classList.add("modalLost-show");
+  lostPopup.classList.add("modallost-show");
   lostForm.focus();
 });
 
 lostClose.addEventListener("click", function (evt) {
   evt.preventDefault();
-  lostPopup.classList.remove("modalLost-show");
-  lostPopup.classList.remove("modalLost-error");
+  lostPopup.classList.remove("modallost-show");
+  lostPopup.classList.remove("modallost-error");
 });
 
 lostAction.addEventListener("submit", function (evt) {
   if (!lostForm.value || !lostEmail.value) {
     evt.preventDefault(); 
-    lostPopup.classList.remove("modalLost-error");
+    lostPopup.classList.remove("modallost-error");
     lostPopup.offsetWidth = lostPopup.offsetWidth;
-    lostPopup.classList.add("modalLost-error");
+    lostPopup.classList.add("modallost-error");
   } else {
     localStorage.setItem("login", lostForm.value);
   }
@@ -36,35 +34,31 @@ lostAction.addEventListener("submit", function (evt) {
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-    if (lostPopup.classList.contains("modalLost-show")) {
+    if (lostPopup.classList.contains("modallost-show")) {
       evt.preventDefault();
-      lostPopup.classList.remove("modalLost-show");
-      lostPopup.classList.remove("modalLost-error");
+      lostPopup.classList.remove("modallost-show");
+      lostPopup.classList.remove("modallost-error");
     }
   }
 });
 
 mapOpen.addEventListener("click", function (evt) {
   evt.preventDefault();
-  mapModal.classList.add("modalMap-show");
+  mapModal.classList.add("modalmap-show");
 });
 
 mapClose.addEventListener("click", function (evt) {
   evt.preventDefault();
-  mapModal.classList.remove("modalMap-show");
+  mapModal.classList.remove("modalmap-show");
 });
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-    if (mapModal.classList.contains("modalMap-show")) {
+    if (mapModal.classList.contains("modalmap-show")) {
       evt.preventDefault();
-      mapModal.classList.remove("modalMap-show");
+      mapModal.classList.remove("modalmap-show");
     }
   }
 });
 
-bayOpen.addEventListener("onclick", function (evt) {
-  evt.preventDefault();
-  bayModal.classList.add("modalBay-show");
-});
 
