@@ -7,9 +7,7 @@ const lostEmail = document.querySelector(".email-form");
 const mapOpen = document.querySelector(".modalmapopen");
 const mapModal = document.querySelector(".modalmap");
 const mapClose = document.querySelector(".modalmap-close");
-const bayOpen = document.querySelector(".buuton-bay");
-const bayModal = document.querySelector(".modalbay");
-const bayClose = document.querySelector(".modalbay-close");
+
 
 lostLink.addEventListener("click", function (evt) { 
   evt.preventDefault();
@@ -63,8 +61,4 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-bayOpen.addEventListener("onclick", function (evt) {
-  evt.preventDefault();
-  bayModal.classList.add("modalbay-show");
-});
 
