@@ -11,7 +11,7 @@
         <div class="main-order-bar">
           <nav class="main-order">
             <a class="header-logo" href="index.html">
-              <img src="img/Logo-teh.svg" width="108" height="18" alt="Логотип компании «Техномарт»">
+              <img src="img/logo-teh.svg" width="108" height="18" alt="Логотип компании «Техномарт»">
             </a>
             <form class="main-order-search" action="https://echo.htmlacademy.ru" method="post">
               <input id="search-field" type="search" name="search" placeholder="Поиск:">
@@ -49,7 +49,7 @@
           <ul class="site-navigation no-bulites">
             <li><a href="index.html">Главная</a></li>
             <li><a href="#">Компания</a></li>
-            <li><a href="Catalog.html">Каталог</a></li>
+            <li><a href="catalog.html" tabindex="-1">Каталог</a></li>
             <li><a href="#">Новости</a></li>
             <li><a href="#">Спецпредложения</a></li>
             <li><a href="#">Доставка</a></li>
@@ -133,7 +133,7 @@
                       <label for="dewalt-field">Dewalt</label>
                     </li>
                     <li class="checkbox-custom">
-                      <input type="checkbox" name="hitachi-field" id="hitachi-field">
+                      <input type="checkbox" name="hitachi-field" id="hitachi-field" disabled>
                       <label for="hitachi-field">Hitachi</label>
                     </li>
                   </ul>
@@ -166,7 +166,7 @@
                   <img src="img/bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
                 </figure>
                 <span>Перфоратор BOSCH <br>BFG 6000<br><del>30500 Р.</del></span>
-                <a class="button-products" href="#openModalMap">25&nbsp;500&nbsp;р.</a>
+                <a class="button-products">25&nbsp;500&nbsp;р.</a>
               </li>
               <li class="products-item">
                 <div class="products-item-bay">
@@ -179,7 +179,7 @@
                 <span>Перфоратор BOSCH <br>BFG 6000<br><del>30500 Р.</del></span>
                 <a class="button-products" href="#">23&nbsp;500&nbsp;р.</a>
               </li>
-              <li class="products-item">
+              <li class="products-item label-new">
                 <div class="products-item-bay">
                   <button type="button" class="buuton-bay">Купить</button>
                   <button type="button" class="buuton-bookmarks">В Закладки</button>
@@ -190,7 +190,7 @@
                 <span>Перфоратор BOSCH <br>BFG 6000<br><del>30500 Р.</del></span>
                 <a class="button-products" href="#">15&nbsp;500&nbsp;р.</a>
               </li>
-              <li class="products-item">
+              <li class="products-item label-new">
                 <div class="products-item-bay">
                   <button type="button" class="buuton-bay">Купить</button>
                   <button type="button" class="buuton-bookmarks">В Закладки</button>
@@ -212,7 +212,7 @@
                 <span>Перфоратор BOSCH <br>BFG 6000<br><del>30500 Р.</del></span>
                 <a class="button-products" href="#">25&nbsp;500&nbsp;р.</a>
               </li>
-              <li class="products-item">
+              <li class="products-item label-new">
                 <div class="products-item-bay">
                   <button type="button" class="buuton-bay">Купить</button>
                   <button type="button" class="buuton-bookmarks">В Закладки</button>
@@ -223,7 +223,7 @@
                 <span>Перфоратор BOSCH <br>BFG 2000<br><del></del></span>
                 <a class="button-products" href="#">12&nbsp;500&nbsp;р.</a>
               </li>
-              <li class="products-item">
+              <li class="products-item label-new">
                 <div class="products-item-bay">
                   <button type="button" class="buuton-bay">Купить</button>
                   <button type="button" class="buuton-bookmarks">В Закладки</button>
@@ -245,7 +245,7 @@
                 <span>Перфоратор BOSCH <br>BFG 6000<br><del>30500 Р.</del></span>
                 <a class="button-products" href="#">25&nbsp;500&nbsp;р.</a>
               </li>
-              <li class="products-item">
+              <li class="products-item label-new">
                 <div class="products-item-bay">
                   <button type="button" class="buuton-bay">Купить</button>
                   <button type="button" class="buuton-bookmarks">В Закладки</button>
@@ -258,7 +258,7 @@
               </li>
             </ul>  
             <ul class="products-list-navigation no-bulites">
-              <li><a class="active" href="#">1</a></li>
+              <li><a class="active" href="#" tabindex="-1">1</a></li>
               <li><a href="#">2</a></li>
               <li><a href="#">3</a></li>
               <li><a href="#">Следующая</a></li>
@@ -277,7 +277,7 @@
           <div class="footer-navigation" >
             <div class="footer-navigation-menu">
               <a href="index.html" class="footer-navigation-logo"> 
-                <img src="img/Logo-teh.svg" width="138" height="23" alt="Логотип компании «Техномарт»">
+                <img src="img/logo-teh.svg" width="138" height="23" alt="Логотип компании «Техномарт»">
               </a>
               <ul class="footer-nav no-bulites">
                 <li><a href="#">Компания</a></li>
@@ -331,21 +331,21 @@
             <div>  
               <ul class="footer-copyright no-bulites">
                 <li>Обратная связь:<br><a href="#">mail@htmlacademy.ru</a></li>
-                <li>Разработано - <br><a href="#">htmlacademy.ru</a></li>
+                <li>Разработано - <br><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></li>
               </ul>
             </div>
           </div> 
         </div>
       </footer>
-      <div id="openModalBay" class="modalBay">
+      <div id="openmodalay" class="modalbay">
         <p>Товар добавлен в корзину!</p>
-        <div class="modalBay-nav">
+        <div class="modalbay-nav">
           <button>Оформить заказ</button>
           <button>Продолжить покупки</button>
         </div>
-        <a class="modalLost-close"></a>
-        <script src="js/script.js"></script>
+        <a class="modallost-close"></a>
       </div> 
+      <script src="js/script.js"></script>
     </body>
   </html>
   
