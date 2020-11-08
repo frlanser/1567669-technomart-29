@@ -1356,7 +1356,7 @@ input[type='search'] {
     justify-content: space-between;
     width: 940px;
     margin: 0 auto;
-    margin-top: 47px;
+    margin-top: 46px;
 }
 
 .details h2 {
@@ -1562,7 +1562,7 @@ input[type='search'] {
 }
 
 .page-footer {
-    margin-top: -6px;
+    margin-top: 79px;
 }
 
 .footer-navigation-bar {
