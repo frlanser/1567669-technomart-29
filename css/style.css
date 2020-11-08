@@ -2524,6 +2524,7 @@ input[type='search'] {
     background-image: url('../img/exit.svg');
     filter: brightness(0);
     opacity: 0.3;
+    vertical-align: baseline;
 }
 
 .button-private-exit:hover::before,
